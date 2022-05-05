@@ -1,0 +1,10 @@
+<div>
+  <div class="container mt-4">
+    <h1>My Lists</h1>
+  </div>
+  <div>
+    <% @lists.each do |list| %>
+      <div> <%= link_to list.name, list_path(list) %> </div>
+    <% end %>
+  </div>
+</div>
