@@ -1,4 +1,10 @@
-<%= simple_form_for @list do |f| %>
-  <%= f.input :name %>
-  <%= f.button :submit, class: "btn btn-primary" %>
-<% end %>
+<div class="container-size-list">
+  <div class="container">
+    <h4><b>Create List Movie</b></h4>
+    <%= simple_form_for @list do |f| %>
+      <%= f.input :name %>
+      <%= f.input :image_url %>
+      <%= f.button :submit, class: "btn btn-primary" %>
+    <% end %>
+  </div>
+</div>

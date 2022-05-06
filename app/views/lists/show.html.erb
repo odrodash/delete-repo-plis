@@ -1,6 +1,9 @@
 <div>
-  <h3><b>Save any kind of movies</b></h3>
-  <h4> <%= @list.name %> </h4>
+  <div style="background-image: url(<%= @list.image_url %>)" class="container-background">
+    <div class="banner-align">
+      <h4 class="color-white"><b><%= @list.name %></b></h4>
+    </div>
+  </div>
 </div>
 
 <div>

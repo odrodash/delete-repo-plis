@@ -1,10 +1,21 @@
 <div>
-  <div class="container mt-4">
-    <h1>My Lists</h1>
+  <div class="banner">
+    <div class="banner-align">
+      <h3 class="color-white"><b>Save any kind of movies</b></h3>
+      <p class="color-white"><b>Classic</b></p>
+    </div>
   </div>
-  <div>
-    <% @lists.each do |list| %>
-      <div> <%= link_to list.name, list_path(list) %> </div>
-    <% end %>
+  <div class="container">
+    <div class="container mt-4 flex container-flex">
+      <h3><b>My Lists</b></h1>
+      <%= link_to "Create Movie List", new_list_path, class: "btn btn-success" %>
+    </div>
+    <div class="container-size flex row">
+      <% @lists.each do |list| %>
+        <div class="container-static col-mg-3" style="background-image: url(<%= list.image_url %>)">
+          <p><b><%= link_to list.name, list_path(list), class: "color-white" %></b></p>
+        </div>
+      <% end %>
+    </div>
   </div>
 </div>

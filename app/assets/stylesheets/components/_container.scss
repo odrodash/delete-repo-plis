@@ -1,0 +1,35 @@
+.container-static {
+  width: 250px;
+  height: 150px;
+  background-size: cover;
+  text-align: center;
+  padding: 80px;
+  margin: 20px;
+  border-radius: 6px;
+}
+
+.container-size {
+  width: 900px;
+  height: auto;
+}
+
+.container-size-list {
+  width: 600px;
+  height: auto;
+  margin: 50px auto;
+  background-color: white;
+  box-shadow: 2px 3px 15px rgba(190, 190, 190, 0.3);
+  padding: 40px;
+}
+
+.container-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container-background {
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  object-fit: cover;
+}
